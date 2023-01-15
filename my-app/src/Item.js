@@ -20,8 +20,8 @@ class Item extends React.Component {
         if (this.state.totalRemaining === 0) {
             alert("You spent all your clicks!");
             this.setState({
-                clicks: 0,
-                totalRemaining: 20
+                clicks: 20,
+                totalRemaining: 0
             });
         }
         
@@ -34,9 +34,13 @@ class Item extends React.Component {
                 <h1 onClick={() => this.clickMe()}>
                     Hello from {this.props.name}
                 </h1>
-                <span>{this.props.name} was clicked {this.state.clicks} times</span>
+                <span>
+                    {this.props.name} was clicked {this.state.clicks} times
+                </span>
                 <br />
-                <span>You have {this.state.totalRemaining} clicks left</span>
+                <span>
+                    You have {this.state.totalRemaining} clicks left
+                </span>
             </div>
         );
     }
