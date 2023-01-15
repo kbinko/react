@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-// import Item from './Item.js';
+import Item from './Item.js';
 
 class StarWars extends React.Component {
   render() {
@@ -28,9 +28,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <Item name="Gully" />
+        <Item name="Gully" />
         <Item name="Konrad" />
-        <Item name="Dupa" /> */}
+        <Item name="Dupa" />
         <StarWars />
        
       </header>
