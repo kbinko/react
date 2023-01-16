@@ -32,7 +32,7 @@ class StarWars extends React.Component {
 
   getNewCharacter() {
     let randomNumber = Math.floor(Math.random() * 82) + 1;
-    const url = `https://swapi.dev/api/people/${randomNumber}`;
+    const url = `https://github.com/akabab/starwars-api/blob/master/api/id/${randomNumber}.json`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
@@ -95,7 +95,9 @@ function App() {
       <header className="App-header">
         {/* <Item name="Gully" />
         <Item name="Konrad" />
-        <Item name="Dupa" /> */}
+        <Item name="Dupa" />
+        <Item name="Kupa" />
+        <Item name="Kupa" /> */}
         <StarWars />
        
       </header>
